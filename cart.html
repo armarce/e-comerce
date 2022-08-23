@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/main.css"/>
+        <title>Ecomerce</title>
+    </head>
+    <body>
+        <header>
+            <ul><li><a href="./index.html" class="home">Home</a></li></ul>
+            <ul id="cart"><li><small></small></li></ul>
+        </header>
+        <main id="cart-container">
+            <h1 id="title-cart">My cart</h1><h1 id="title-order">Order summary</h1>
+            <section id="cart-products">
+                <ul>
+                </ul>
+                <template>
+                <li>
+                    <img src="https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg" alt=""/>
+                    <span class="title">Beutiful adsasd asdasd asdasdd</span>
+                    <span class="price">Price 80 USD / Unit</span>
+                    <small class="stock">Stock 68 units</small>
+                    <div class="controls"><input type="button" value="-" class="rest"/><input type="text" value=""/><input type="button" value="+" class="add"/></div>
+                    <span class="subtotal">$ 1980</span>
+                    <span class="delete"></span>
+                </li>
+                </template>
+            </section>
+            <section id="order">
+                <span id="legend-subtotal">Subotal</span><span id="total">$ 24000</span>
+                <span id="shipping">Shipping</span><span id="free">Free</span>
+                <div id="total-container">
+                    <span id="legend-total">Total</span><span id="total-final">$ 24000</span>
+                </div>
+                <input type="button" value="Checkout"/>
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <li>
+                    <h3>About</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam porro perferendis voluptate consectetur quo non magnam reiciendis. Debitis nobis perferendis id ratione, iusto, voluptas laborum consectetur eligendi excepturi nulla explicabo!.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore earum cum modi corporis, et tenetur excepturi, odio quia quisquam blanditiis temporibus quasi nemo sapiente quis totam praesentium, iusto voluptates officiis.
+                    </p>
+                </li>
+                <li>
+                    <h3>Friendly Webs</h3>
+                    <a href="https://php.net/">PHP</a>
+                    <a href="https://developer.mozilla.org/es/">MDN</a>
+                    <a href="https://nodejs.org/es/">Nodejs</a>
+                    <a href="https://redis.io/">Redis</a>
+                    <a href="https://www.mysql.com/">MySql</a>
+                <li>
+                    <h3>Quick Links</h3>
+                    <a href="#">Abaout Us</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Contribute</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Sitemap</a>
+                </li>
+            </ul>
+            <hr>
+            <span>Desarrollado por Armando Marcelo</span>
+        </footer>        
+        <script type="text/javascript" src="./js/main.js"></script>
+        <script>
+            let myApp = new App();
+            myApp.myCart();
+        </script>
+    </body>
+</html>

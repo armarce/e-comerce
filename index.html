@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/main.css"/>
+        <title>Ecomerce</title>
+    </head>
+    <body>
+        <header>
+            <ul><li><a href="./index.html" class="home">Home</a></li></ul>
+            <ul id="cart"><a href="./cart.html"><li><small></small></li></a></ul>
+        </header>
+        <main>
+            <section id="categories">
+                <ul>
+                    <template>
+                        <li></li>
+                    </template>
+                </ul>
+            </section>
+            <h1>Products</h1>
+            <section id="products">
+                <ul>
+                </ul>
+                <template>
+                    <li>
+                        <img src="https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg" alt=""/>
+                        <span class="title"></span>
+                        <span class="price"></span>
+                        <small class="stock">73 unidades en stock</small><input type="button" value="+"/>
+                    </li>
+                </template>
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <li>
+                    <h3>About</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam porro perferendis voluptate consectetur quo non magnam reiciendis. Debitis nobis perferendis id ratione, iusto, voluptas laborum consectetur eligendi excepturi nulla explicabo!.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore earum cum modi corporis, et tenetur excepturi, odio quia quisquam blanditiis temporibus quasi nemo sapiente quis totam praesentium, iusto voluptates officiis.
+                    </p>
+                </li>
+                <li>
+                    <h3>Friendly Webs</h3>
+                    <a href="https://php.net/">PHP</a>
+                    <a href="https://developer.mozilla.org/es/">MDN</a>
+                    <a href="https://nodejs.org/es/">Nodejs</a>
+                    <a href="https://redis.io/">Redis</a>
+                    <a href="https://www.mysql.com/">MySql</a>
+                <li>
+                    <h3>Quick Links</h3>
+                    <a href="#">Abaout Us</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Contribute</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Sitemap</a>
+                </li>
+            </ul>
+            <hr>
+            <span>Desarrollado por Armando Marcelo</span>
+        </footer>
+        <script type="text/javascript" src="./js/main.js"></script>
+        <script>
+            let myApp = new App();
+            myApp.categories();
+            myApp.products(4);
+        </script>
+    </body>
+</html>
